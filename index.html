@@ -9,15 +9,18 @@
 </head>
 
 <body>
-    <form style="background-color: whitesmoke solid;">
-        <legend>
-            <fieldset>
+    <fieldset>
+        <form>
+            <h1 style="background: grey; border-radius: 2px; padding: 5px;">
+                Payment form example
+            </h1>
+            <p style="background: pink; border-style: 2px red solid; border-radius: 3px; margin: 10px; padding: 10px;">
+                Some fields are missing
+            </p>
+
+            <legend style="padding: 10px;">
                 <div>
-                    <h1>Payment form example</h1>
-                    <h3>Some fields are missing</h3>
-                </div>
-                <div>
-                    <p>
+                    <section>
                         <label for="cCard">Card #
                             <input type="number" placeholder="xxxx xxxx xxxx xxxx">
                         </label>
@@ -27,36 +30,38 @@
                         <label for="aMount">Amount $
                             <input type="number">
                         </label>
-                    </p>
+                    </section>
                 </div>
                 <br>
-                <div>
-                    <label for="cIty">City
-                        <input type="text">
-                    </label>
-                    <label for="sTate">State
-                        <select name="State">
-                            <option value="1"></option>
-                            <option value="2">Near</option>
-                            <option value="3">Not too far</option>
-                            <option value="4">close enough</option>
-                            <option value="5">Not too far, not too close</option>
-                        </select>
-                    </label>
-                    <label for="pCode">Postal Code
-                        <input type="text">
-                    </label>
+                <section>
+                    <div>
+                        <label for="cIty">City
+                            <input type="text">
+                        </label>
+                        <label for="sTate">State
+                            <select name="State">
+                                <option value="1"></option>
+                                <option value="2">Near</option>
+                                <option value="3">Not too far</option>
+                                <option value="4">close enough</option>
+                                <option value="5">Not too far, not too close</option>
+                            </select>
+                        </label>
+                        <label for="pCode">Postal Code
+                            <input type="text">
+                        </label>
 
-                </div>
+                    </div>
+                </section>
                 <br>
+                <section>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
 
-
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-
-                <button type="menu">
+                </section>
+                <section style="margin: 0px 0px 0px 0px; background-color: rgb(177, 177, 177); border-radius: 5px; padding: 5px;">
 
                     <label class="container"><i class="fab fa-cc-mastercard"></i>
                         <input type="radio" checked="checked" name="radio">
@@ -73,18 +78,29 @@
                     <label class="container"><i class="fab fa-cc-amex"></i>
                         <input type="radio" name="radio">
                         <span class="checkmark"></span>
+                    </label><br>
+                    
+                </section>
+                
+                <label for="message" style="margin: 0px 0px 300px 0px;">Message: <br>
+                        <textarea name="message" id="msgArea" cols="30" rows="5" style="margin-left: 300px;">
+                        </textarea>
+                        <p style="color: gray; margin: 5px 0px 20px 300px;">
+                            
+                                <i>Add any notes here</i>
+                            
+                        </p>
                     </label>
 
-                    <footer>
-                        <button class="btnCancel" type="submit">Cancel</button>
+                <section>
 
+                    <footer style="display: inline; margin-left: 400px;">
+                        <button class="btnCancel" type="submit">Cancel</button>
                         <button class="btnSend" type="submit">Send</button>
                     </footer>
-            </fieldset>
-                    
-        </legend>
-    </form>
-
+            </legend>
+        </form>
+    </fieldset>
 </body>
 
 </html>
